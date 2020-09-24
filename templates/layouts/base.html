@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- Page Title -->
+    {% if title %}
+    <title>{{ title }} - GrinBlog</title>
+    {% else %}
+    <title>HappyLink|Інтернет Провайдер</title>
+    {% endif %}
+
+    <!-- Meta Data -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Интернет, Киев,Соборная, Ленина, частный сектор, HappyLink, дешевый">
+    <meta name="description" content="Інтернет провайдер|HappyLink"/>
+    <meta property="og:image" content="{{ url_for('static', filename='img/icon/sm.jpg') }}"/>
+
+
+    {% include 'layouts/style.html' %}
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div class='preloader w-100 h-100 position-fixed'>
+        <span class="loader">
+            Загрузка…
+        </span>
+</div>
+<!-- End Preloader -->
+
+<!-- Header -->
+<header class="header">
+    <div class="header-main">
+        <div class="container-fluid">
+            
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:0671319072" class="phone-line" style="color:#4682b4;">
+                        (067)131-90-72
+                    </a>
+                    <a href="tel:0731319072" class="phone-line" style="color:#fcd800;">
+                        (073)131-90-72
+                    </a>
+                    <a href="tel:0991893710" class="phone-line" style="color:#ff0000;">
+                         (099)189-37-10
+                    </a>
+
+
+            <div class="row align-items-center main-menu-wrapper justify-content-between">
+
+                <div class="col order-last order-sm-first">
+
+                    <!-- Header Menu -->
+                    <div class="main-menu d-flex align-items-center justify-content-end justify-content-sm-start">
+
+                        <!-- Menu Trigger -->
+                        <div class="menu-trigger">
+                            <span></span>
+                        </div>
+                        <!-- End Menu Trigger -->
+
+                        <!-- Main Menu -->
+                        <div class="nav-wrapper">
+                            <ul class="nav align-items-center">
+                                <li class="current-menu-item">
+                                    <a href="/">Головна</a>
+                                </li>
+                                <li>
+                                    <a href="/">Про компанію</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/#about-us">Про компанію</a></li>
+                                        <li><a href="/news">Новини</a></li>
+                                        <li><a href="/contacts">Контакти</a></li>
+                                        <li><a href="/paymants">Оплата</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item-has-children">
+                                    <a href="/article">Корисна інформація</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Інтернет</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/price-list">Тарифи</a></li>
+                                        <li><a href="/shares">Акції</a></li>
+                                        <li><a href="/Recommended-equipment-internet">Рекомендоване обладнання</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Домофон та Відеонагляд</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/intercom">Домофон</a></li>
+                                        <li><a href="/cctv">Відеоспостереження</a></li>
+                                        <li><a href="/Recommended-equipment-intercom">Рекомендоване обладнання</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/tv">Телебачення</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- End Main Menu -->
+                    </div>
+                    <!-- End Header Menu -->
+                </div>
+
+                <div class="col text-sm-center logo-holder">
+                    <!-- Logo -->
+                    <a href="/" class="logo">
+                        <!--<img src="assets/img/logo.png" data-rjs="2" alt=""-->
+                        <img src="{{ url_for('static', filename='img/logo/logo.png') }}" data-rjs="2" alt=""
+                             width='40%'>
+                    </a>
+                    <!-- End Logo -->
+                </div>
+
+                <div class="col text-right d-none d-sm-block">
+                    <!-- Social Icons -->
+                    <ul class="social_icon_list">
+                        <li><a href="#"><i class="fa fa-telegram" title="Чат" target="_blank"></i></a></li>
+                        <li><a href="https://www.facebook.com/HappyLinkNetUa/"><i class="fa fa-facebook" title="Ми на Facebook" target="_blank"></i></a></li>
+                        <li><a href="https://my.happylink.net.ua/autorize.php" title="Особистий кабінет" target="_blank">
+                            <i class="fa fa-id-card-o"></i></a>
+                        </li>
+                    </ul>
+                    <!-- End Social Icons -->
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header -->
+{% block body %}
+
+{% endblock %}
+
+
+<!-- Footer -->
+<footer class="footer c1-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <!-- About Widget -->
+                <div class="widget widget_about">
+                    <!-- Widget Logo -->
+                    <div class="widget-logo">
+                        <h2>HappyLink</h2>
+                    </div>
+                    <div class="title-border">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- End Widget Logo -->
+
+                    <!-- About Text -->
+                    <div class="about-text">
+                        <p>
+                            Don’t Worry, Be Happy
+                        </p>
+                    </div>
+                    <!-- End About Text -->
+                </div>
+                <!-- End About Widget -->
+
+                <!-- Widget Social Icon -->
+                <div class="widget widget_social_icon">
+                    <!-- Social Icons -->
+                    <ul class="social_icon_list">
+                        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+                        <li><a href="https://www.facebook.com/HappyLinkNetUa/"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                    <!-- End Social Icons -->
+                </div>
+                <!-- End Widget Social Icon -->
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <!-- Widget Newslatter -->
+                <div class="widget widget_newsletter">
+                    <!-- Widget Title  -->
+                    <div class="widget-title">
+                        <h3>
+                            <a href="/">Головна</a>
+                        </h3>
+                          <h3>
+                            <a href="/#partners">Партнери</a>
+                        </h3>
+                        <h3>
+                            <a href="/#about-us">Про компанію</a>
+                        </h3>
+                        <h3>
+                            <a href="https://my.happylink.net.ua/autorize.php" target="_blank">Особистий кабінет</a>
+                        </h3>
+
+                    </div>
+                    <!-- Widget Title End  -->
+
+                </div>
+                <!-- End Widget Newslatter -->
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Widget Contact -->
+                <div class="widget widget_contact">
+                    <!-- Widget Title  -->
+                    <div class="widget-title">
+                        <h3>Контакти</h3>
+
+                        <div class="title-border">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- Widget Title End  -->
+
+                    <!-- Contact Content -->
+                    <div class="contact-content">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:+380671319072">(067)131-90-72</a> ,
+                                <a href="tel:+380731319072">(073)131-90-72</a> ,
+                                <a href="tel:+380991893710">(099)189-37-10</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:support@happylink.net.ua">support@happylink.net.ua</a> ,
+                                <a href="mailto:happylink@i.ua">happylink@i.ua</a>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Всі права захищені © 2014-2020 HappyLink
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Contact Content -->
+                </div>
+                <!-- End Widget Contact -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+
+{% include 'layouts/script.html' %}
+</body>
+</html>

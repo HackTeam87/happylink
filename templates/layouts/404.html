@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+{% block body %}
+ <!-- 404 -->
+    <section class="d-flex align-items-center justify-content-center min-vh-100 pt-5 pb-5 pb-lg-0 pt-lg-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- 404 Image -->
+                    <div class="mb-50 mb-lg-0">
+                        <img src="{{ url_for('static', filename='img/error/error404.jpg') }}" data-rjs="2" alt="">
+                    </div>
+                    <!-- End 404 Image -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- 404 Content -->
+                    <div class="content404">
+                        <h1>Помилка!</h1>
+
+                        <p>
+                            Сторінку не знайдено <br>
+                            <a href="{{ url_for('index') }}">На головну сторінку.</a>
+                        </p>
+
+                    </div>
+                    <!-- End 404 Content -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End 404 -->
+{% endblock %}

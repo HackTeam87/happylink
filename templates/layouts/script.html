@@ -1,0 +1,45 @@
+<!-- ======= jQuery Library ======= -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+
+<!-- ======= Bootstrap Bundle JS ======= -->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+<!-- =======  Mobile Menu JS ======= -->
+<script src="{{ url_for('static', filename='js/menu.min.js') }}"></script>
+
+<!-- ======= Owl Carousel JS ======= -->
+<script src="{{ url_for('static', filename='plugins/owlcarousel/owl.carousel.min.js') }}"></script>
+
+<!-- ======= Retina JS ======= -->
+<!--    <script src="{{ url_for('static', filename='plugins/retinajs/retina.min.js') }}"></script>-->
+
+<!-- ======= Main JS ======= -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<!-- ======= Custom JS ======= -->
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+<!-- // Initialize the slider -->
+
+<!--<link href="{{ url_for('static', filename='css/jquery.bxslider.css') }}" rel="stylesheet"/>-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="{{ url_for('static', filename='js/jquery.bxslider.js') }}"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: false,
+            controls: false,
+            adaptiveHeight: true,
+            mode: 'fade',
+            speed: 950,
+            pause: 4500,
+        });
+    });
+</script>
+
+ 
